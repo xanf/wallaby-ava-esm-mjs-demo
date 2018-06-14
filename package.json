@@ -1,0 +1,32 @@
+{
+  "name": "node-ava-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^1.0.0-beta.5.1"
+  },
+  "dependencies": {
+    "esm": "^3.0.49"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.mjs"
+    ],
+    "babel": false,
+    "compileEnhancements": false,
+    "extensions": [
+      "js",
+      "mjs"
+    ],
+    "require": [
+      "esm"
+    ]
+  }
+}
